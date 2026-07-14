@@ -159,6 +159,9 @@ add_action( 'widgets_init', 'qd_widgets_init' );
  * Enqueue scripts and styles.
  */
 function qd_scripts() {
+	// Enqueue SweetAlert2 from CDN globally
+	wp_enqueue_script( 'sweetalert2', 'https://cdn.jsdelivr.net/npm/sweetalert2@11', array(), null, true );
+
 	if ( class_exists( 'WPCF7' ) ) {
 		wp_enqueue_style( 'qd-alert', get_template_directory_uri() . '/assets/alert/css/cf7simplepopup-core.css', array(), qd_VERSION );
 		wp_enqueue_script( 'qd-jquery_alert', get_template_directory_uri() . '/assets/alert/js/cf7simplepopup-core.js', array(), qd_VERSION, true );
@@ -166,7 +169,8 @@ function qd_scripts() {
 	}
 	// wp_enqueue_style( 'qd-fancybox', get_template_directory_uri() . '/assets/libs/jquery.fancybox.css' );
 	// wp_enqueue_style( 'qd-css-flickity', get_template_directory_uri() . '/assets/libs/flickity.min.css' );
-	wp_enqueue_style( 'qd-css-font', get_template_directory_uri() . '/assets/fonts/font.css' );
+	wp_enqueue_style( 'qd-google-fonts', 'https://fonts.googleapis.com/css2?family=Epilogue:wght@300;400;500;700&family=Manrope:wght@400;500;700&family=Playfair+Display:ital,wght@0,600;0,700;1,400;1,600&display=swap', array(), null );
+	wp_enqueue_style( 'qd-material-symbols', 'https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200', array(), null );
 	wp_enqueue_style( 'qd-style', get_stylesheet_uri(), array(), qd_VERSION );
 
 	// //JS

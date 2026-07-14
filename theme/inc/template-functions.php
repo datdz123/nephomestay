@@ -239,3 +239,60 @@ function acf_link($field_name, $is_sub_field = false) {
         'target' => $link['target'] ? esc_attr($link['target']) : '_self'
     ];
 }
+
+/**
+ * Enqueue Google Fonts and Material Symbols for Landing Page template
+ */
+function qd_landing_page_scripts() {
+	if ( is_page_template( 'front-end-page.php' ) || is_page_template( 'front-page.php' ) || is_front_page() ) {
+		wp_enqueue_style( 'qd-google-fonts', 'https://fonts.googleapis.com/css2?family=Epilogue:wght@300;400;700&family=Manrope:wght@400;700&family=Playfair+Display:ital,wght@0,600;0,700;1,400;1,600&display=swap', array(), null );
+		wp_enqueue_style( 'qd-material-symbols', 'https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200', array(), null );
+	}
+}
+add_action( 'wp_enqueue_scripts', 'qd_landing_page_scripts' );
+
+/**
+ * Add custom body classes for Landing Page template
+ */
+function qd_landing_page_body_classes( $classes ) {
+	if ( is_page_template( 'front-end-page.php' ) || is_page_template( 'front-page.php' ) || is_front_page() ) {
+		$classes[] = 'bg-background';
+		$classes[] = 'text-on-background';
+		$classes[] = 'font-body-md';
+		$classes[] = 'selection:bg-secondary-container';
+		$classes[] = 'selection:text-on-secondary-container';
+	}
+	return $classes;
+}
+add_filter( 'body_class', 'qd_landing_page_body_classes' );
+
+/**
+ * Inject custom inline CSS styling in head for Landing Page template
+ */
+function qd_landing_page_head_styles() {
+	if ( is_page_template( 'front-end-page.php' ) || is_page_template( 'front-page.php' ) || is_front_page() ) {
+		?>
+		<style>
+			html {
+				scroll-behavior: smooth;
+			}
+			.material-symbols-outlined {
+				font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+			}
+			.grain-overlay {
+				background-image: url("https://www.transparenttextures.com/patterns/natural-paper.png");
+				opacity: 0.05;
+				pointer-events: none;
+			}
+			.text-shadow-hero {
+				text-shadow: 0 4px 12px rgba(0,0,0,0.5);
+			}
+			.nav-blur {
+				backdrop-filter: blur(12px);
+				-webkit-backdrop-filter: blur(12px);
+			}
+		</style>
+		<?php
+	}
+}
+add_action( 'wp_head', 'qd_landing_page_head_styles' );

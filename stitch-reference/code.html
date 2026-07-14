@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="vi" style=""><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Nếp Homestay - Gìn giữ nét quê, trọn vẹn thói quen</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@300;700&amp;family=Manrope:wght@400;700&amp;family=Playfair+Display:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-tint": "#4d6453",
+                        "on-tertiary": "#ffffff",
+                        "on-primary-fixed-variant": "#364c3c",
+                        "surface": "#fff9e8",
+                        "on-secondary-container": "#735a00",
+                        "surface-bright": "#fff9e8",
+                        "error-container": "#ffdad6",
+                        "primary-fixed": "#d0e9d4",
+                        "inverse-surface": "#333124",
+                        "secondary-fixed": "#ffe08e",
+                        "on-tertiary-fixed": "#341100",
+                        "secondary-fixed-dim": "#ecc246",
+                        "secondary-container": "#fed255",
+                        "surface-container-high": "#eee8d5",
+                        "on-primary": "#ffffff",
+                        "outline-variant": "#c3c8c1",
+                        "background": "#fff9e8",
+                        "surface-container": "#f4eedb",
+                        "primary": "#061b0e",
+                        "on-error": "#ffffff",
+                        "surface-container-highest": "#e8e2d0",
+                        "surface-variant": "#e8e2d0",
+                        "tertiary": "#2d0e00",
+                        "secondary": "#755b00",
+                        "tertiary-fixed-dim": "#ffb691",
+                        "on-tertiary-container": "#d27d50",
+                        "on-secondary": "#ffffff",
+                        "on-surface": "#1e1c10",
+                        "surface-container-lowest": "#ffffff",
+                        "on-error-container": "#93000a",
+                        "on-primary-fixed": "#0b2013",
+                        "surface-container-low": "#faf3e0",
+                        "on-tertiary-fixed-variant": "#74340c",
+                        "outline": "#737973",
+                        "error": "#ba1a1a",
+                        "surface-dim": "#e0dac7",
+                        "tertiary-container": "#4d1d00",
+                        "inverse-primary": "#b4cdb8",
+                        "on-background": "#1e1c10",
+                        "primary-fixed-dim": "#b4cdb8",
+                        "on-secondary-fixed-variant": "#584400",
+                        "primary-container": "#1b3022",
+                        "inverse-on-surface": "#f7f1de",
+                        "tertiary-fixed": "#ffdbcb",
+                        "on-primary-container": "#819986",
+                        "on-secondary-fixed": "#241a00",
+                        "on-surface-variant": "#434843"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "margin-mobile": "20px",
+                        "margin-desktop": "64px",
+                        "gutter": "24px",
+                        "container-max": "1280px",
+                        "unit": "8px"
+                    },
+                    "fontFamily": {
+                        "display-hero": ["Epilogue"],
+                        "body-md": ["Manrope"],
+                        "headline-md": ["Playfair Display"],
+                        "headline-lg-mobile": ["Playfair Display"],
+                        "headline-lg": ["Playfair Display"],
+                        "label-caps": ["Manrope"],
+                        "body-lg": ["Manrope"]
+                    },
+                    "fontSize": {
+                        "display-hero": ["48px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "300"}],
+                        "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "headline-md": ["28px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                        "headline-lg-mobile": ["32px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                        "headline-lg": ["40px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                        "label-caps": ["12px", {"lineHeight": "1.2", "letterSpacing": "0.1em", "fontWeight": "700"}],
+                        "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .grain-overlay {
+            background-image: url("https://www.transparenttextures.com/patterns/natural-paper.png");
+            opacity: 0.05;
+            pointer-events: none;
+        }
+        .text-shadow-hero {
+            text-shadow: 0 4px 12px rgba(0,0,0,0.5);
+        }
+        .nav-blur {
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md selection:bg-secondary-container selection:text-on-secondary-container">
+<div class="fixed inset-0 grain-overlay z-[60]"></div>
+<!-- Header / TopNavBar -->
+<header class="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-margin-mobile md:px-margin-desktop py-4 bg-primary/90 backdrop-blur-md shadow-sm">
+<div class="flex items-center gap-2">
+<img alt="Nếp Homestay Logo" class="h-16 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCOQr5Sj2i3IxOCXcFT7WATRmllegkvmjM3fsZtFhTEc1HQKKLA2ggl5efbiuUCy_2E06b3qnQ_ML03p74RjlKiKc-ft-KJJcYiB3OLCbEhDwKxDww6pUSvdvYmNv8q5w-pmaRUEVWnBH3wz-oDzJ4-nOLt_xBX643FepqvFFUh1_XFtSuuHxqpZEoJ29hFQF1f04Wfo5vXXeNzjLRXcbz7oZHlTF-qTmVFqZjojVVc_W72HF5vtyr8-SyZtOwYWjZjsu67j4MiCUoS"/>
+</div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="font-label-caps text-label-caps text-secondary-container border-b-2 border-secondary-container pb-1" href="#home">Trang chủ</a>
+<a class="font-label-caps text-label-caps text-on-primary/80 hover:text-on-primary transition-colors" href="#rooms">Phòng nghỉ</a>
+<a class="font-label-caps text-label-caps text-on-primary/80 hover:text-on-primary transition-colors" href="#experience">Trải nghiệm</a>
+<a class="font-label-caps text-label-caps text-on-primary/80 hover:text-on-primary transition-colors" href="#location">Vị trí</a>
+<a class="font-label-caps text-label-caps text-on-primary/80 hover:text-on-primary transition-colors" href="#contact">Liên hệ</a>
+</nav>
+<a class="bg-secondary-container text-on-secondary-container px-6 py-2.5 rounded-full font-label-caps text-label-caps hover:bg-secondary hover:text-on-secondary transition-all duration-300 active:scale-95 inline-block" href="#contact">Liên hệ đặt phòng</a>
+</header>
+<!-- Hero Section -->
+<section class="relative h-screen flex items-center justify-center overflow-hidden" id="home">
+<div class="absolute inset-0 z-0 transition-all duration-1000 opacity-100 translate-y-0">
+<div class="w-full h-full bg-cover bg-center scale-105 animate-pulse-slow" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDPVpIN2WkxliI5lTxl8yBX35zUezL5km0oY52IBeCZm6LWr7qoDNv6PE_fj9kSFswS7-VuarpQE88GG3T8gx7iRNEAYCazIIGIYFTW5EA1drDCD2lFU993mFdHNshmhcMAPvb-FTNF2V_l6SD8upM4pweX4NDOl4_jy2Rutxk1FtBfbqJ6fpytqIc868OE16YvRtC7Vto0LE1ntO-ekEhHVTdxiUsGCcSFLrmJhsC98brteBO1xTEtsE2263oB3GcKJagqioyq2aQq')"></div>
+<div class="absolute inset-0 bg-primary/40"></div>
+</div>
+<div class="relative z-10 text-center px-margin-mobile max-w-4xl transition-all duration-1000 opacity-100 translate-y-0">
+<h1 class="font-display-hero text-headline-lg md:text-display-hero text-white mb-6 text-shadow-hero">
+                Nếp Homestay
+            </h1>
+<p class="font-headline-md text-white/90 mb-10 max-w-2xl mx-auto leading-relaxed italic">
+                Nơi những thói quen bình dị được nâng niu giữa hương đồng gió nội.
+            </p>
+<div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+<a class="bg-secondary-container text-on-secondary-container px-10 py-4 rounded-xl font-label-caps text-label-caps hover:shadow-xl hover:shadow-secondary/20 transition-all duration-500 transform hover:-translate-y-1" href="#rooms">
+                    Đặt phòng ngay
+                </a>
+<a class="border border-white/40 text-white px-10 py-4 rounded-xl font-label-caps text-label-caps backdrop-blur-sm hover:bg-white/10 transition-all duration-300" href="#about">
+                    Khám phá thêm
+                </a>
+</div>
+</div>
+<div class="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce transition-all duration-1000 opacity-100 translate-y-0">
+<span class="material-symbols-outlined text-white text-4xl">keyboard_arrow_down</span>
+</div>
+</section>
+<!-- Giới Thiệu (About) Section -->
+<section class="py-24 md:py-32 px-margin-mobile md:px-margin-desktop bg-surface" id="about">
+<div class="max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-center transition-all duration-1000 opacity-100 translate-y-0">
+<div class="order-2 md:order-1">
+<span class="font-label-caps text-label-caps text-tertiary-container mb-4 block">VỀ CHÚNG TÔI</span>
+<h2 class="font-headline-lg text-headline-lg text-primary mb-8 leading-tight">Gìn giữ nét quê giữa <br/><span class="italic font-normal">hơi thở đương đại</span></h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-6 leading-relaxed">
+                    Nếp không chỉ là một điểm dừng chân, mà là một hành trình tìm lại sự tĩnh lặng trong tâm hồn. Với kiến trúc lấy cảm hứng từ những ngôi nhà mái lá truyền thống, kết hợp tinh tế cùng vật liệu gạch trần và gỗ tự nhiên.
+                </p>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8 opacity-80">
+                    Mỗi góc nhỏ tại Nếp đều được chăm chút để bạn cảm nhận được sự ấm cúng, gần gũi như đang ở chính ngôi nhà của mình, nơi những thói quen tốt đẹp được tiếp nối.
+                </p>
+<div class="grid grid-cols-2 gap-6">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary-container text-3xl">psychology_alt</span>
+<span class="font-label-caps text-label-caps">Tĩnh lặng</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary-container text-3xl">eco</span>
+<span class="font-label-caps text-label-caps">Bền vững</span>
+</div>
+</div>
+</div>
+<div class="order-1 md:order-2 relative">
+<div class="rounded-3xl overflow-hidden shadow-2xl rotate-2 hover:rotate-0 transition-transform duration-700">
+<img class="w-full h-[500px] object-cover" data-alt="A warm and inviting interior shot of Nếp Homestay featuring a rustic brick wall, a minimalist wooden table with a white chair, and a large window looking out onto a lush green tropical garden and rice fields. The lighting is soft and golden, highlighting the texture of the bricks and the natural wood flooring." src="https://lh3.googleusercontent.com/aida-public/AB6AXuATGX1pPxcs8m1qehzO14wwearb_hLhJGQKvEIMhbsare0oZOFMDUwsbdsfyNS6PYjWey1y845qiD3d6qn5OI3odoHun4NJ49o5UDUs0np4sO5jMdOYhMxOQbgIsP7KKtbDaKGaZvzwk6isrRmj_0LFqe4jq-iZ9qQ8B2VP8Rpm7j7hl2h2jzBNnJKPx2gP8xcLtbg32xBdl41VIJLHvjuc24Y0GgWWUFRWcemQKoaVF6ZA647Z_jKrXg-SeagNNp8S8CtFrZ2wzGgr"/>
+</div>
+<div class="absolute -bottom-8 -left-8 bg-primary-container p-8 rounded-2xl hidden lg:block shadow-xl">
+<p class="text-on-primary-container font-headline-md italic">"Trở về với bản nguyên"</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Điểm Nổi Bật Section -->
+<section class="py-24 px-margin-mobile md:px-margin-desktop bg-surface-container-low">
+<div class="max-w-container-max mx-auto text-center mb-16 transition-all duration-1000 opacity-100 translate-y-0">
+<h2 class="font-headline-lg text-headline-lg text-primary mb-4">Lý do bạn yêu Nếp</h2>
+<div class="w-20 h-1 bg-secondary-container mx-auto"></div>
+</div>
+<div class="max-w-container-max mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 transition-all duration-1000 opacity-100 translate-y-0">
+<!-- Card 1 -->
+<div class="bg-surface p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow group">
+<div class="w-16 h-16 bg-primary-container/10 rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-primary text-3xl">landscape</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-3">View ruộng lúa</h3>
+<p class="text-on-surface-variant opacity-80">Tầm nhìn khoáng đạt ra cánh đồng lúa xanh mướt trải dài vô tận.</p>
+</div>
+<!-- Card 2 -->
+<div class="bg-surface p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow group">
+<div class="w-16 h-16 bg-primary-container/10 rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-primary text-3xl">roofing</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-3">Kiến trúc mái lá</h3>
+<p class="text-on-surface-variant opacity-80">Sự kết hợp độc đáo giữa gạch trần mộc mạc và mái lá mát rượi.</p>
+</div>
+<!-- Card 3 -->
+<div class="bg-surface p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow group">
+<div class="w-16 h-16 bg-primary-container/10 rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-primary text-3xl">forest</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-3">Không gian xanh</h3>
+<p class="text-on-surface-variant opacity-80">Hơn 70% diện tích là cây xanh và khu vực sinh hoạt ngoài trời.</p>
+</div>
+<!-- Card 4 -->
+<div class="bg-surface p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow group">
+<div class="w-16 h-16 bg-primary-container/10 rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-primary text-3xl">nature_people</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-3">Gần gũi thiên nhiên</h3>
+<p class="text-on-surface-variant opacity-80">Đánh thức mọi giác quan bằng tiếng chim hót và gió nội.</p>
+</div>
+</div>
+</section>
+<!-- Phòng Nghỉ (Rooms) Section -->
+<section class="py-24 px-margin-mobile md:px-margin-desktop bg-surface" id="rooms">
+<div class="max-w-container-max mx-auto mb-16 flex flex-col md:flex-row justify-between items-end gap-6 transition-all duration-1000 opacity-100 translate-y-0">
+<div>
+<span class="font-label-caps text-label-caps text-tertiary-container mb-4 block">CHỌN CHỐN DỪNG CHÂN</span>
+<h2 class="font-headline-lg text-headline-lg text-primary">Phòng nghỉ mộc mạc</h2>
+</div>
+<p class="max-w-md text-on-surface-variant">Mỗi gian phòng là một câu chuyện về chất liệu và sự bình yên, được thiết kế để tối ưu sự thoải mái của bạn.</p>
+</div>
+<div class="max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 transition-all duration-1000 opacity-100 translate-y-0">
+<!-- Room 1: Dorm -->
+<div class="group">
+<div class="relative overflow-hidden rounded-3xl mb-8 aspect-[4/3]">
+<img class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" data-alt="A spacious and aesthetic dormitory room at Nếp Homestay with high-quality bunk beds made of dark wood and black metal frames. Elegant ivory curtains provide privacy for each bunk. The ceiling is a beautiful woven rattan pattern with warm, bohemian-style pendant lights hanging down, casting a soft glow over the wooden floor and brick walls." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB-o2RxqokHhjWWJ_f1hNk63jC6U8OQyebNIwrztAD2mcRW_HPlg8Dm8p-Og3UJmovGWCuQ8_tbp02O-1fnLt27v8hxPbJ0U6Zeaw5gUlksV42jlIY-A7fu3Lyj7rtN8rlx-4O5FBT5Yg_t1Dfkbn-7jlRTKtdQjax0dtoNoLT9-CWqYz0I_3RbzcL0-FWgS44n22PIYf70SrTtuINdbYQ6Mc4-dQnYjB7u9ygK9UjhL0HVOWrvfTkMnf5G_3wvuklpSJ1di_yuAl_P"/>
+<div class="absolute top-6 left-6 bg-secondary-container text-on-secondary-container px-4 py-1 rounded-full font-label-caps text-label-caps">Phổ biến</div>
+</div>
+<div class="flex justify-between items-start mb-4">
+<h3 class="font-headline-lg text-headline-md text-primary">Phòng Dorm Tập Thể</h3>
+<div class="text-right"><span class="font-headline-md text-tertiary-container">Chỉ từ 250.000đ</span></div>
+</div>
+<p class="text-on-surface-variant mb-6">Không gian rộng rãi với giường tầng cao cấp, rèm che riêng tư và trần mây tre đan thủ công tinh xảo. Lý tưởng cho nhóm bạn hoặc khách đi một mình.</p>
+<a class="inline-flex items-center gap-2 font-label-caps text-label-caps text-primary border-b border-primary pb-1 group-hover:gap-4 transition-all" href="#">
+                    XEM CHI TIẾT <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+<!-- Room 2: Private -->
+<div class="group">
+<div class="relative overflow-hidden rounded-3xl mb-8 aspect-[4/3]">
+<img class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" data-alt="A cozy private bedroom in Nếp Homestay featuring a rustic exposed red brick wall and a large comfortable bed with crisp white linens and a traditional ethnic-patterned runner. A circular woven fan headboard decoration adds a local touch. Warm yellow neon light strips highlight the wall texture, while a modern air conditioner ensures comfort." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCwyU9hiSogNJgVBI1-6AVMARbvjc4gLfKaZkGOvSqGSm0Gdd3-RvQAjyHvruQgNoC2zWXYuJdGzfVERY53hPrG7WnvZ8m3wiYWdGJV-2vyYrUEN2r0eMQ_Lww_W0fNzdoVK7UQijaRhdsmDdH95TruqD-CThP4jNagCVN29uqN9gulp1VcqKW1TC3radp-1e3t_0tZ1GGWv34B7rxWNVrFhRFabobpDFcGZMOuLyRPfKbR6SyOezy84AuJEWMpFx_1hFDfIDOXC6oT"/>
+</div>
+<div class="flex justify-between items-start mb-4">
+<h3 class="font-headline-lg text-headline-md text-primary">Phòng Riêng (Couple)</h3>
+<div class="text-right"><span class="font-headline-md text-tertiary-container">Chỉ từ 800.000đ</span></div>
+</div>
+<p class="text-on-surface-variant mb-6">Chốn riêng tư lãng mạn với tường gạch mộc, drap giường họa tiết thổ cẩm và ban công hướng thẳng ra thung lũng xanh rì.</p>
+<a class="inline-flex items-center gap-2 font-label-caps text-label-caps text-primary border-b border-primary pb-1 group-hover:gap-4 transition-all" href="#">
+                    XEM CHI TIẾT <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+</section>
+<!-- Gallery Section (Không Gian Chung) -->
+<section class="py-24 px-margin-mobile md:px-margin-desktop bg-primary-container text-white overflow-hidden">
+<div class="max-w-container-max mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center transition-all duration-1000 opacity-100 translate-y-0">
+<div class="lg:col-span-4">
+<h2 class="font-headline-lg text-headline-lg mb-8">Không gian chung <br/><span class="italic text-on-primary-container font-normal">Gắn kết &amp; Chia sẻ</span></h2>
+<p class="text-on-primary-container mb-10 leading-relaxed">Từ hiên nhà ngắm lúa đến góc trà đạo ấm cúng, mọi không gian tại Nếp đều khuyến khích sự kết nối giữa con người và thiên nhiên.</p>
+<div class="flex gap-4">
+<button class="w-12 h-12 rounded-full border border-on-primary-container/30 flex items-center justify-center hover:bg-secondary-container hover:text-on-secondary-container transition-colors">
+<span class="material-symbols-outlined">west</span>
+</button>
+<button class="w-12 h-12 rounded-full border border-on-primary-container/30 flex items-center justify-center hover:bg-secondary-container hover:text-on-secondary-container transition-colors">
+<span class="material-symbols-outlined">east</span>
+</button>
+</div>
+</div>
+<div class="lg:col-span-8">
+<div class="flex gap-6 overflow-x-auto pb-8 snap-x no-scrollbar">
+<div class="min-w-[300px] md:min-w-[450px] aspect-[4/5] rounded-2xl overflow-hidden snap-center relative group">
+<img class="w-full h-full object-cover" data-alt="A detailed view of a veranda at Nếp Homestay with a rustic wooden table covered in a vibrant, colorful ethnic geometric tablecloth. Heavy wooden chairs surround the table under a thatched palm roof. In the background, a breathtaking view of vibrant green terraced rice fields and lush tropical forests under a bright daylight sky." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB6r5ozUgFHYdsEB2FtxKD1kSIb3H2R6Gz0355UN7WAMBjZFJiOEAoZKZs7URimzEXgqqn_mGh27n0K8lLzECGu4kWLJlYXzxkFD-OM-SIQOVP0QcnE5baNjBy-lFzIc_sOOBfx491m-tujtSepMlQtJEU-OTW3r7mVVh4noU65vdpMyNCBZTYDagh5up1EZbdGyi_LpkQ19AZvlePg7ymOZYwwqzwdQ7xAzWEjPBPzj9Iieh-2Jqt9a3IXR17c1moXGfXGYK3GaTdE"/>
+<div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-8">
+<p class="font-label-caps text-label-caps">HIÊN NHÀ NGẮM CẢNH</p>
+</div>
+</div>
+<div class="min-w-[300px] md:min-w-[450px] aspect-[4/5] rounded-2xl overflow-hidden snap-center relative group">
+<img class="w-full h-full object-cover" data-alt="A creative interior corner of Nếp Homestay featuring a large glass window that frames a magnificent tropical jackfruit tree growing just outside. Inside, two stylish white modern chairs sit next to a small round table, creating a perfect reading nook against a rustic red brick wall. The thatched roof of the exterior structure is visible above the tree." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBl6R-Goj_gV6gr47lb-3Y4vGiRw2mZWeyWSwxtvvMs8GekIo9DfkaCwY-6ZXHKQExkc1qn8K4c5gM2BsusrkQUHegFxgWxauiCeCYT4zwldi4nBB6854qjJ2iG63Yr58mQlwrKCDMs312Qeki5I6HRuLzHD-ZO412COElRVat-axCCMzBSuHJ7fRO8Jqli2UXNmuJis8_-ECKXdNwug9RwZLphzZ5LdXuDr9q-qaTZ5-K8jVgY0vrK8hgJcQnKN9JkJgeBPY0sWOit"/>
+<div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-8">
+<p class="font-label-caps text-label-caps">GÓC ĐỌC SÁCH BÊN CỬA SỔ</p>
+</div>
+</div>
+<div class="min-w-[300px] md:min-w-[450px] aspect-[4/5] rounded-2xl overflow-hidden snap-center relative group">
+<img class="w-full h-full object-cover" data-alt="A beautiful close-up of a handmade rustic chandelier at Nếp Homestay. The light fixture is made from thick natural rope and gnarled wood branches, with warm Edison bulbs hanging from it. It is set against a background of a traditional thatched roof and lush green leaves, creating a warm, organic, and cozy atmosphere." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCc6D5ww-cVzx_T43GB7KTehmY9m7pX6YRUD5fC3ALl6u4UEdsY7HpyDo8jf3ev4Lj4EgRnDOH-ryTRFilJyAKkHBjU2PTWw7lWgxyKjB1fl9nMlMQKaBkyrtq7etwVDQ5E7fP8bqATBxNbwIAFhL1sT8mecWdOIaODQcBY1q6PcFSWP7Xgn9UNuJY4ut4zROwHM0RLLGsMkwhhBd8f8K8zoahI6c1a0h1uBJXX_YjCBVeldBKyTcwK8bdbCgDLaadGT45Ray1CiLa-"/>
+<div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-8">
+<p class="font-label-caps text-label-caps">CHI TIẾT KIẾN TRÚC ĐỘC ĐÁO</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Trải Nghiệm Section -->
+<section class="py-24 px-margin-mobile md:px-margin-desktop bg-surface" id="experience">
+<div class="max-w-container-max mx-auto text-center mb-16 transition-all duration-1000 opacity-100 translate-y-0">
+<span class="font-label-caps text-label-caps text-tertiary-container mb-4 block">SỐNG NHƯ NGƯỜI BẢN ĐỊA</span>
+<h2 class="font-headline-lg text-headline-lg text-primary">Trải nghiệm đáng nhớ tại Nếp</h2>
+</div>
+<div class="max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 transition-all duration-1000 opacity-100 translate-y-0">
+<!-- Activity 1 -->
+<div class="relative h-[400px] rounded-3xl overflow-hidden group">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="A high-angle, top-down shot of a large traditional Vietnamese woven bamboo tray filled with a variety of colorful local dishes. It includes a large pile of sticky rice, grilled chicken, fresh forest greens, rolled rice pancakes, and various herbs and dipping sauces. The colors are vibrant and the presentation is rustic and authentic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC03qLds9BofUEnt4haRsalhswZlPYNEBc0taH5BezAKscq6M4bBpfR_yn4FXAfZeA7RxoOQ2wVvqiNUJ2MAyhGvsJa9TJXwKjFfD8YnFxfVvYv13pu3EARSQ03P-X_KGUXQ6pudxsOqklKMA1lmDm1QyvUS3A5aHVRfiwziU5l_Cy_JyoktosNZKfz37d4u9sQSAKNPfR0SH9UyBnUS4vbpyLIVNeaFmOJ0dimkfoCzgKzuOYVKmrN_QuTM81VuSr6yGxe2PCTk4T5"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent flex flex-col justify-end p-8">
+<h3 class="font-headline-md text-white mb-2">Ẩm thực dân dã</h3>
+<p class="text-white/80 text-sm mb-4">Thưởng thức mâm cơm quê chuẩn vị với nguyên liệu sạch từ vườn nhà.</p><p class="text-secondary-container font-label-caps text-label-caps mb-2">Chỉ từ 150.000đ/người</p>
+<span class="material-symbols-outlined text-secondary-container">restaurant</span>
+</div>
+</div>
+<!-- Activity 2 -->
+<div class="relative h-[400px] rounded-3xl overflow-hidden group">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="A top-down view of a traditional Vietnamese feast served on a large round red tray. The tray features a grilled whole fish with crispy skin, grilled pork, fresh lettuce and herbs, and small bowls of chili dipping sauce. The arrangement is artistic and emphasizes fresh, local, and authentic Vietnamese countryside flavors." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB85Q2EPH28yHeHDt8W2a32niA0zQ3kiczawaE1FJ_5n9gehFMsFEVdgZKwSbtfFFlPHzYBkLfBBWWcGb6ET-WwqVipIngfqGoBcGUZJQpzA2MOm5qpvh3qX0twjGQYzR0oXzBCVm7uOPTWuT_DVqtlOdByh6UWBam9tiYVXYDv9EKpz5rtZv4KyIPfeb1cWQFw9O0L2DE9V4GvHovhYY2c6BzuY4urSjdNlRWLmj1YzpFTnCTbulyZH_CQcCVw0trXKtzkd8uFi6RO"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent flex flex-col justify-end p-8">
+<h3 class="font-headline-md text-white mb-2">Tiệc nướng bản địa</h3>
+<p class="text-white/80 text-sm mb-4">Trải nghiệm những món nướng thơm lừng bên bếp than hồng cùng người thân.</p><p class="text-secondary-container font-label-caps text-label-caps mb-2">Chỉ từ 250.000đ/người</p>
+<span class="material-symbols-outlined text-secondary-container">outdoor_grill</span>
+</div>
+</div>
+<!-- Activity 3 -->
+<div class="relative h-[400px] rounded-3xl overflow-hidden group">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="A beautiful landscape shot of lush green rice terraces in the Vietnamese countryside under a soft morning light. A narrow path winds through the fields, inviting exploration. The atmosphere is serene, quiet, and deeply connected to nature's rhythms." src="https://lh3.googleusercontent.com/aida-public/AB6AXuANnYX62C32ehBgGA8ImVDL-bgBdm0G2ccXhQz3GU2Lbe0ZFgc0cXQ_1t1WHwGf7VoCEuGi0RRlXoVxP-XFQhX0jLZae5ltP14U8bp2caqdrpuJEP2eGCczgcgycWD43S9Gb4LG7jg2Dp4hSm0KI6eBK_XoxrAx2cOfOpo8uIZL7mhy9l_sdT1YqabUAbV844cMNmea4gMFitNS4TSXaogZUeFUAEOuQkYnZHE-ab09Zrm4Er01US0MSIg_76qerFlsM-KH366OjTMS"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent flex flex-col justify-end p-8">
+<h3 class="font-headline-md text-white mb-2">Đi bộ xuyên đồng</h3>
+<p class="text-white/80 text-sm mb-4">Hòa mình vào thiên nhiên, hít thở không khí trong lành của cánh đồng lúa.</p><p class="text-secondary-container font-label-caps text-label-caps mb-2">Miễn phí cho khách lưu trú</p>
+<span class="material-symbols-outlined text-secondary-container">directions_walk</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Vị Trí Section -->
+<section class="py-24 px-margin-mobile md:px-margin-desktop bg-surface-container-low" id="location">
+<div class="max-w-container-max mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center transition-all duration-1000 opacity-100 translate-y-0">
+<div>
+<h2 class="font-headline-lg text-headline-lg text-primary mb-6">Đường đến với Nếp</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-8 opacity-80">Nằm nép mình bên cạnh thung lũng lúa, Nếp là nơi lý tưởng để bạn "đi trốn" khỏi phố thị ồn ào nhưng vẫn cực kỳ thuận tiện để di chuyển.</p>
+<div class="space-y-6">
+<div class="flex gap-4 items-start">
+<span class="material-symbols-outlined text-primary mt-1">location_on</span>
+<div>
+<h4 class="font-label-caps text-label-caps text-primary mb-1">ĐỊA CHỈ</h4>
+<p class="text-on-surface-variant">Thôn Đông, Bản Lác, Mai Châu, Hòa Bình</p>
+</div>
+</div>
+<div class="flex gap-4 items-start">
+<span class="material-symbols-outlined text-primary mt-1">call</span>
+<div>
+<h4 class="font-label-caps text-label-caps text-primary mb-1">SỐ ĐIỆN THOẠI</h4>
+<p class="text-on-surface-variant">09xx.xxx.xxx</p>
+</div>
+</div>
+</div>
+<button class="mt-10 border border-primary text-primary px-8 py-3 rounded-xl font-label-caps text-label-caps hover:bg-primary hover:text-white transition-all">
+                    XEM CHỈ ĐƯỜNG TRÊN GOOGLE MAPS
+                </button>
+</div>
+<div class="h-[450px] rounded-3xl overflow-hidden shadow-lg border-4 border-surface group">
+<img class="w-full h-full object-cover" data-alt="A clean, minimalist map illustration showing the scenic location of Nếp Homestay in Mai Châu, Hòa Bình. The map features organic green and earthy tones, marking the homestay near lush rice fields and local landmarks with stylish icons." data-location="Mai Chau, Vietnam" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDWLgQ4XeE6k-1cEZtVtzYPVE3Socluqgxz04WUkKYIyi-xZTPSTQWj97Pfa9Q5FoaEqAIOp-9MCt9b0R0IfSvHrFe9d9jL75_Rk4qYhu3EVr3sQPPSPuDVgbnOA01XNWaAAzbGsiQAEy1r64iYE6y6ito7owEYJZPkl-TUV5FZ0xIeJ3V7kx6FfAt9sE4Po-5ugvHBHJ3jEKkvUVLJMCA4saY8tm3saPw7DJgbQnnuPGiQmmmJgbtf2zWVD8rSJA6iUIRO1zuIV-xX"/>
+</div>
+</div>
+</section>
+<!-- Đánh Giá Section -->
+<section class="py-24 px-margin-mobile md:px-margin-desktop bg-surface">
+<div class="max-w-container-max mx-auto text-center mb-16 transition-all duration-1000 opacity-100 translate-y-0">
+<h2 class="font-headline-lg text-headline-lg text-primary">Lời khen từ những người bạn</h2>
+</div>
+<div class="max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 transition-all duration-1000 opacity-100 translate-y-0">
+<!-- Review 1 -->
+<div class="bg-surface-container p-10 rounded-3xl relative">
+<div class="flex text-secondary-container mb-4">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-md text-on-surface-variant italic mb-6 leading-relaxed">"Phòng ở cực kỳ sạch sẽ và thơm mùi gỗ. View nhìn ra ruộng lúa buổi sáng sớm thực sự là vô giá. Chắc chắn sẽ quay lại!"</p>
+<div class="flex items-center gap-3">
+<img alt="Minh Anh profile" class="w-12 h-12 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCH03_xH6zP038I6zBlxa26Ma-Ek9aJld5Z5PGJ2bfkb12lqm2uJxlme0-lK92opnyOCPstb4wRtPo_mSCO0CJoWjfw1slL9NZmOr8YnF3Rr46vk1ZhmZiVekT8muTZAx4Lgg45_MXppwGkUPaPnQ_hPmjTPhA-yvHm3zDXqEja53gt5IwkXB4jStlT-SZCqgST9dWtuUSgtA0AO5PhMbXC1cfzf-074YN7___mv2OSv0Jz5ls3LDkY1zFextOnxBNtK2WFyMQ_WC5C"/>
+<div>
+<p class="font-label-caps text-label-caps text-primary">MINH ANH</p>
+<p class="text-[10px] text-on-surface-variant opacity-60 uppercase">Hà Nội</p>
+</div>
+</div>
+</div>
+<!-- Review 2 -->
+<div class="bg-surface-container p-10 rounded-3xl relative">
+<div class="flex text-secondary-container mb-4">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-md text-on-surface-variant italic mb-6 leading-relaxed">"Đồ ăn ở đây ngon không tả được. Anh chị chủ nhà thân thiện và nhiệt tình hỗ trợ mình tìm đường đi dạo. Rất recommend mọi người!"</p>
+<div class="flex items-center gap-3">
+<img alt="Thành Trung profile" class="w-12 h-12 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB9-tCEV9poYP0zwphaX_eMcAjZLzayhQBnR0168XlNV_8mYa9QtN671NL2AEmOlNxX0r4HHH7KG76HSP1A1aAFhqJT_01XHQFwxP4pksE9qgsZ9fzmy7hnRQkYLuTZ0QSzNBweaFKDnC4MTFESe5fTqgCR3u_tfrjuvfiTstcs6aziYMmyHzT22mXM5yqS3X_3iw2-Jq1rhxgXPYgzEkemj8skxpNbVGuBZUKhJSjZleqYyVYz-fTa7iryalevEPtEWevFiJpH2HMV"/>
+<div>
+<p class="font-label-caps text-label-caps text-primary">THÀNH TRUNG</p>
+<p class="text-[10px] text-on-surface-variant opacity-60 uppercase">TP. HCM</p>
+</div>
+</div>
+</div>
+<!-- Review 3 -->
+<div class="bg-surface-container p-10 rounded-3xl relative">
+<div class="flex text-secondary-container mb-4">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-md text-on-surface-variant italic mb-6 leading-relaxed">"Không gian yên tĩnh tuyệt đối, rất hợp để detox tâm hồn và đọc sách. Kiến trúc mái lá ở đây nhìn thực sự đặc biệt."</p>
+<div class="flex items-center gap-3">
+<img alt="Linh Chi profile" class="w-12 h-12 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDvisJoekMexp19mY0ZeTK67o38vS8MlqQX1XH8HPOKjItRhsJzCGaUDy9bvzZ0-OOhMlulSQ7Fy74zZ9o5LC0bPd0dwNZi-2UgumEp3dBFSm0bBwjcioDD2DZVhOPgj8dyemL_tV5t094tnpUexanCoXQoahfIycTrKmhlMdE9jyrVr78O1qewBO0FTTsMk-iA6TJp60yoDzO0-c8JwEFYwHL70AGmj6v3jxmBai0NZJzIAKbfkvP35GcE5ayNtv18T_GK46S_WcW_"/>
+<div>
+<p class="font-label-caps text-label-caps text-primary">LINH CHI</p>
+<p class="text-[10px] text-on-surface-variant opacity-60 uppercase">Đà Nẵng</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="w-full py-12 px-margin-mobile md:px-margin-desktop bg-primary text-on-primary border-t border-outline-variant/20" id="contact">
+<div class="max-w-container-max mx-auto flex flex-col md:flex-row justify-between items-start gap-12">
+<div class="max-w-sm">
+<img alt="Nếp Homestay Logo" class="h-20 w-auto object-contain mb-4" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCOQr5Sj2i3IxOCXcFT7WATRmllegkvmjM3fsZtFhTEc1HQKKLA2ggl5efbiuUCy_2E06b3qnQ_ML03p74RjlKiKc-ft-KJJcYiB3OLCbEhDwKxDww6pUSvdvYmNv8q5w-pmaRUEVWnBH3wz-oDzJ4-nOLt_xBX643FepqvFFUh1_XFtSuuHxqpZEoJ29hFQF1f04Wfo5vXXeNzjLRXcbz7oZHlTF-qTmVFqZjojVVc_W72HF5vtyr8-SyZtOwYWjZjsu67j4MiCUoS"/>
+<p class="text-on-primary/70 mb-6">Gìn giữ nét quê, trọn vẹn thói quen. Hãy để Nếp đồng hành cùng bạn trong những kỳ nghỉ ý nghĩa nhất.</p>
+<div class="flex gap-4">
+<a class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-secondary-container hover:text-on-secondary-container transition-all" href="#">
+<span class="material-symbols-outlined text-lg">face_nod</span>
+</a>
+<a class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-secondary-container hover:text-on-secondary-container transition-all" href="#">
+<span class="material-symbols-outlined text-lg">share</span>
+</a>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-12">
+<div>
+<h4 class="font-label-caps text-label-caps text-secondary-container mb-6">LIÊN KẾT</h4>
+<ul class="space-y-4">
+<li class=""><a class="text-on-primary/70 hover:text-on-primary transition-colors" href="#about">Về chúng tôi</a></li>
+<li class=""><a class="text-on-primary/70 hover:text-on-primary transition-colors" href="#rooms">Phòng nghỉ</a></li>
+<li class=""><a class="text-on-primary/70 hover:text-on-primary transition-colors" href="#experience">Trải nghiệm</a></li>
+<li class=""><a class="text-on-primary/70 hover:text-on-primary transition-colors" href="#">Đặt phòng</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-label-caps text-label-caps text-secondary-container mb-6">HỖ TRỢ</h4>
+<ul class="space-y-4">
+<li class=""><a class="text-on-primary/70 hover:text-on-primary transition-colors" href="#">Chính sách bảo mật</a></li>
+<li class=""><a class="text-on-primary/70 hover:text-on-primary transition-colors" href="#">Điều khoản sử dụng</a></li>
+<li class=""><a class="text-on-primary/70 hover:text-on-primary transition-colors" href="#">Câu hỏi thường gặp</a></li>
+</ul>
+</div>
+</div>
+<div class="w-full md:w-auto">
+<h4 class="font-label-caps text-label-caps text-secondary-container mb-6">ĐĂNG KÝ NHẬN TIN</h4>
+<form class="flex">
+<input class="bg-white/5 border border-white/20 rounded-l-xl px-4 py-3 focus:outline-none focus:border-secondary-container w-full" placeholder="Email của bạn" type="email"/>
+<button class="bg-secondary-container text-on-secondary-container px-6 py-3 rounded-r-xl" type="submit">
+<span class="material-symbols-outlined">send</span>
+</button>
+</form>
+</div>
+</div>
+<div class="max-w-container-max mx-auto mt-16 pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="font-label-caps text-label-caps text-on-primary/50">© 2024 Nếp Homestay. Gìn giữ nét quê, trọn vẹn thói quen.</p>
+<p class="font-label-caps text-label-caps text-on-primary/50 uppercase">Made with Heart in Mai Chau</p>
+</div>
+</footer>
+<script>
+        // Header scroll effect
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 50) {
+                header.classList.add('shadow-lg', 'bg-primary/95');
+                header.classList.remove('bg-primary/90');
+            } else {
+                header.classList.remove('shadow-lg', 'bg-primary/95');
+                header.classList.add('bg-primary/90');
+            }
+        });
+
+        // Intersection Observer for scroll animations
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100', 'translate-y-0');
+                    entry.target.classList.remove('opacity-0', 'translate-y-10');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('section > div').forEach(el => {
+            el.classList.add('transition-all', 'duration-1000', 'opacity-0', 'translate-y-10');
+            observer.observe(el);
+        });
+    </script>
+</body></html>
