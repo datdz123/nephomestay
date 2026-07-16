@@ -23,7 +23,7 @@ if ($is_mam_com) {
 	$items = [
 		"Gà đồi chạy bộ hấp lá chanh rừng thơm ngọt chắc thịt",
 		"Thịt lợn mán nướng mắc khén, hạt dổi thơm cay tê đầu lưỡi",
-		"Măng đắng rừng Mai Châu luộc chấm chẩm chéo cay cay ngăm đắng đầy mê hoặc",
+		"Măng đắng rừng Hà Giang luộc chấm chẩm chéo cay cay ngăm đắng đầy mê hoặc",
 		"Xôi nếp nương đồ trong chõ gỗ dẻo thơm ngậy",
 		"Canh rau tầm bóp thanh mát giải nhiệt mùa hè"
 	];
@@ -34,7 +34,7 @@ if ($is_mam_com) {
 	$food_image = $theme_uri . "/assets/images/stitch-design/about.jpg";
 	$food_time = "30 - 45 phút chuẩn bị";
 	$food_serves = "1 - 2 người dùng";
-	$food_desc = "Gà đồi chạy bộ Mai Châu nổi tiếng thịt dai thơm ngọt, không mỡ. Gà được làm sạch, tẩm ướp thảo mộc rừng độc đáo cùng hạt dổi nướng chín vàng giã nhỏ. Sau đó gà được nướng thủ công trên than hoa rực hồng cho đến khi lớp da ngoài vàng óng giòn rụm, tỏa hương thơm quyến rũ không thể cưỡng lại.";
+	$food_desc = "Gà đồi chạy bộ Hà Giang nổi tiếng thịt dai thơm ngọt, không mỡ. Gà được làm sạch, tẩm ướp thảo mộc rừng độc đáo cùng hạt dổi nướng chín vàng giã nhỏ. Sau đó gà được nướng thủ công trên than hoa rực hồng cho đến khi lớp da ngoài vàng óng giòn rụm, tỏa hương thơm quyến rũ không thể cưỡng lại.";
 	$items = [
 		"Nửa con gà chạy đồi nướng mọi vàng óng thơm phức",
 		"Nước chấm chẩm chéo đặc trưng giã tay chuẩn vị Thái",

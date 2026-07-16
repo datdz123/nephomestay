@@ -168,7 +168,7 @@ get_header();
 						<span class="text-tertiary-container font-bold text-lg">1.200.000đ</span>
 						<span class="text-xs text-on-surface-variant opacity-60">/ phòng / đêm</span>
 					</div>
-					<p class="text-on-surface-variant text-sm mb-4 leading-relaxed line-clamp-3">Phòng VIP cao cấp tuyệt mỹ cho 2 người. Kính sát đất nhìn panorama thung lũng lúa Mai Châu và set trà chiều thượng hạng.</p>
+					<p class="text-on-surface-variant text-sm mb-4 leading-relaxed line-clamp-3">Phòng VIP cao cấp tuyệt mỹ cho 2 người. Kính sát đất nhìn panorama thung lũng lúa Hà Giang và set trà chiều thượng hạng.</p>
 					
 					<!-- Amenities -->
 					<div class="space-y-2 mb-6 pt-4 border-t border-outline/5 text-xs text-on-surface-variant">

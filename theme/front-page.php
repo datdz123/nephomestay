@@ -324,29 +324,35 @@ $theme_uri = esc_url( get_template_directory_uri() );
 	<div class="max-w-container-max mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center transition-all duration-1000 opacity-100 translate-y-0">
 		<div>
 			<h2 class="font-headline-lg text-headline-lg text-primary mb-6">Đường đến với Nếp</h2>
-			<p class="font-body-lg text-body-lg text-on-surface-variant mb-8 opacity-80">Nằm nép mình bên cạnh thung lũng lúa, Nếp là nơi lý tưởng để bạn "đi trốn" khỏi phố thị ồn ào nhưng vẫn cực kỳ thuận tiện để di chuyển.</p>
+			<p class="font-body-lg text-body-lg text-on-surface-variant mb-8 opacity-80">Nằm nép mình bên cạnh thung lũng xanh, Nếp là nơi lý tưởng để bạn "đi trốn" khỏi phố thị ồn ào nhưng vẫn cực kỳ thuận tiện để di chuyển.</p>
 			<div class="space-y-6">
 				<div class="flex gap-4 items-start">
 					<span class="material-symbols-outlined text-primary mt-1">location_on</span>
 					<div>
 						<h4 class="font-label-caps text-label-caps text-primary mb-1">ĐỊA CHỈ</h4>
-						<p class="text-on-surface-variant">Thôn Đông, Bản Lác, Mai Châu, Hòa Bình</p>
+						<p class="text-on-surface-variant">Nếp home stay, Thôn Chang, xã Phương Độ, Hà Giang, Vietnam</p>
 					</div>
 				</div>
 				<div class="flex gap-4 items-start">
 					<span class="material-symbols-outlined text-primary mt-1">call</span>
 					<div>
 						<h4 class="font-label-caps text-label-caps text-primary mb-1">SỐ ĐIỆN THOẠI</h4>
-						<p class="text-on-surface-variant">09xx.xxx.xxx</p>
+						<p class="text-on-surface-variant">0943 847 906</p>
 					</div>
 				</div>
 			</div>
-			<button class="mt-10 border border-primary text-primary px-8 py-3 rounded-xl font-label-caps text-label-caps hover:bg-primary hover:text-white transition-all">
+			<a href="https://maps.google.com/?q=N%E1%BA%BFp+home+stay%2C+Th%C3%B4n+Chang%2C+x%C3%A3+Ph%C6%B0%C6%A1ng+%C4%90%E1%BB%99%2C+H%C3%A0+Giang" target="_blank" rel="noopener noreferrer" class="inline-block mt-10 border border-primary text-primary px-8 py-3 rounded-xl font-label-caps text-label-caps hover:bg-primary hover:text-white transition-all">
 				XEM CHỈ ĐƯỜNG TRÊN GOOGLE MAPS
-			</button>
+			</a>
 		</div>
 		<div class="h-[450px] rounded-3xl overflow-hidden shadow-lg border-4 border-surface group">
-			<img class="w-full h-full object-cover" alt="Bản đồ chỉ đường Nếp Homestay Mai Châu" src="<?php echo $theme_uri; ?>/assets/images/stitch-design/map.jpg"/>
+			<iframe 
+				src="https://maps.google.com/maps?q=N%E1%BA%BFp+home+stay%2C+Th%C3%B4n+Chang%2C+x%C3%A3+Ph%C6%B0%C6%A1ng+%C4%90%E1%BB%99%2C+H%C3%A0+Giang&hl=vi&t=&z=15&ie=UTF8&iwloc=&output=embed" 
+				class="w-full h-full border-0" 
+				allowfullscreen="" 
+				loading="lazy" 
+				referrerpolicy="no-referrer-when-downgrade">
+			</iframe>
 		</div>
 	</div>
 </section>

@@ -22,7 +22,7 @@ $menus = [
 		],
 		[
 			'id' => 'set-2',
-			'name' => 'Mâm Cơm Đặc Sản Mai Châu',
+			'name' => 'Mâm Cơm Đặc Sản Hà Giang',
 			'price' => 450000,
 			'price_format' => '450.000đ',
 			'desc' => 'Hương vị trọn vẹn với cá suối nướng muối ớt, thịt trâu gác bếp xào măng chua, cải mèo xào tỏi và cơm lam nướng dẻo.',

@@ -19,11 +19,8 @@ $theme_uri = get_template_directory_uri();
 			<img alt="Nếp Homestay Logo" class="h-20 w-auto object-contain mb-4" src="<?php echo esc_url($theme_uri . '/assets/images/stitch-design/logo.png'); ?>"/>
 			<p class="text-on-primary/70 mb-6">Gìn giữ nét quê, trọn vẹn thói quen. Hãy để Nếp đồng hành cùng bạn trong những kỳ nghỉ ý nghĩa nhất.</p>
 			<div class="flex gap-4">
-				<a class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-secondary-container hover:text-on-secondary-container transition-all" href="#">
-					<span class="material-symbols-outlined text-lg">face_nod</span>
-				</a>
-				<a class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-secondary-container hover:text-on-secondary-container transition-all" href="#">
-					<span class="material-symbols-outlined text-lg">share</span>
+				<a class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-secondary-container hover:text-on-secondary-container transition-all" href="https://www.facebook.com/nephomestayhagiang" target="_blank" rel="noopener noreferrer">
+					<?php echo svg( 'facebook', '20', '20', 'fill-current' ) ?>
 				</a>
 			</div>
 		</div>
@@ -61,7 +58,7 @@ $theme_uri = get_template_directory_uri();
 
 	<div class="max-w-container-max mx-auto mt-16 pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4">
 		<p class="font-label-caps text-label-caps text-on-primary/50">© 2024 Nếp Homestay. Gìn giữ nét quê, trọn vẹn thói quen.</p>
-		<p class="font-label-caps text-label-caps text-on-primary/50 uppercase">Made with Heart in Mai Chau</p>
+		<p class="font-label-caps text-label-caps text-on-primary/50 uppercase">Made with Heart in Ha Giang</p>
 	</div>
 </footer>
 <div

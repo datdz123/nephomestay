@@ -16,7 +16,7 @@ get_header();
 		<span class="font-label-caps text-label-caps text-secondary-container mb-4 block tracking-widest">KẾT NỐI VỚI NẾP</span>
 		<h1 class="font-display-hero text-display-hero text-white mb-6">Liên Hệ &amp; Vị Trí</h1>
 		<p class="font-body-lg text-white/80 max-w-xl mx-auto italic">
-			Hãy để Nếp đồng hành cùng bạn trong hành trình tìm lại sự bình yên giữa núi rừng Mai Châu thơ mộng.
+			Hãy để Nếp đồng hành cùng bạn trong hành trình tìm lại sự bình yên giữa núi rừng Hà Giang thơ mộng.
 		</p>
 	</div>
 </section>
@@ -72,19 +72,18 @@ get_header();
 						</div>
 						<div>
 							<h4 class="font-bold text-primary text-sm mb-1 font-label-caps">Địa chỉ</h4>
-							<p class="text-on-surface-variant text-sm leading-relaxed">Bản Lác, xã Chiềng Châu, huyện Mai Châu, tỉnh Hòa Bình, Việt Nam.</p>
+							<p class="text-on-surface-variant text-sm leading-relaxed">Nếp home stay, Thôn Chang, xã Phương Độ, Hà Giang, Vietnam, 20112</p>
 						</div>
 					</div>
 
-					<!-- Item 2: Hotline -->
+					<!-- Item 2: Hotline / Zalo -->
 					<div class="flex items-start gap-4">
 						<div class="w-12 h-12 rounded-full bg-secondary-container/15 flex items-center justify-center text-secondary-container shrink-0">
 							<span class="material-symbols-outlined">phone_in_talk</span>
 						</div>
 						<div>
 							<h4 class="font-bold text-primary text-sm mb-1 font-label-caps">Hotline / Zalo</h4>
-							<p class="text-on-surface-variant text-sm font-semibold">0987.654.321 (Đặt phòng &amp; Ăn uống)</p>
-							<p class="text-on-surface-variant text-sm font-semibold">0912.345.678 (Hỗ trợ tìm đường)</p>
+							<p class="text-on-surface-variant text-sm font-semibold">0943.847.906 (Đặt phòng &amp; Hỗ trợ)</p>
 						</div>
 					</div>
 
@@ -98,6 +97,21 @@ get_header();
 							<p class="text-on-surface-variant text-sm">hello@nephomestay.com</p>
 						</div>
 					</div>
+
+					<!-- Item 4: Facebook -->
+					<div class="flex items-start gap-4">
+						<div class="w-12 h-12 rounded-full bg-secondary-container/15 flex items-center justify-center text-secondary-container shrink-0">
+							<?php echo svg( 'facebook', '20', '20', 'fill-current' ) ?>
+						</div>
+						<div>
+							<h4 class="font-bold text-primary text-sm mb-1 font-label-caps">Facebook</h4>
+							<p class="text-on-surface-variant text-sm">
+								<a href="https://www.facebook.com/nephomestayhagiang" target="_blank" rel="noopener noreferrer" class="hover:text-secondary-container hover:underline transition-colors">
+									fb.com/nephomestayhagiang
+								</a>
+							</p>
+						</div>
+					</div>
 				</div>
 			</div>
 
@@ -107,7 +121,7 @@ get_header();
 					<span class="material-symbols-outlined">directions_car</span> Hướng dẫn di chuyển
 				</h3>
 				<p class="text-sm text-on-surface-variant leading-relaxed">
-					Từ Hà Nội, bạn di chuyển theo hướng Đại lộ Thăng Long đi Hòa Bình, rồi đi tiếp dọc QL6 qua đèo Thung Khe để xuống thung lũng Mai Châu. Nếp Homestay nằm sâu trong Bản Lác yên bình, đường vào ô tô đi thoải mái. Có bãi đỗ xe an toàn 24/7.
+					Từ Hà Nội, bạn di chuyển theo hướng cao tốc Nội Bài - Lào Cai, rẽ ra nút giao Tuyên Quang đi QL2 thẳng hướng thành phố Hà Giang. Nếp Homestay nằm tại Thôn Chang, xã Phương Độ thanh bình (cách trung tâm TP Hà Giang khoảng 5km), đường vào ô tô đi thoải mái, có bãi đỗ xe an toàn.
 				</p>
 			</div>
 		</div>
@@ -118,9 +132,9 @@ get_header();
 <section class="py-10 bg-surface border-t border-outline/10">
 	<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
 		<div class="rounded-[2.5rem] overflow-hidden shadow-2xl border-4 border-white relative h-[450px] md:h-[550px]">
-			<!-- Embedded Google Maps centered around Lac Village, Mai Chau -->
+			<!-- Embedded Google Maps centered around Nếp Homestay, Thôn Chang, Hà Giang -->
 			<iframe 
-				src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3734.5029349887714!2d105.0763806!3d20.5982845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1m3!1d3734.5029349887714!2d105.0763806!3d20.5982845!5m2!1svi!2svn" 
+				src="https://maps.google.com/maps?q=N%E1%BA%BFp+home+stay%2C+Th%C3%B4n+Chang%2C+x%C3%A3+Ph%C6%B0%C6%A1ng+%C4%90%E1%BB%99%2C+H%C3%A0+Giang&hl=vi&t=&z=15&ie=UTF8&iwloc=&output=embed" 
 				class="w-full h-full border-0" 
 				allowfullscreen="" 
 				loading="lazy" 

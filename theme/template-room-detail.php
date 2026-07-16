@@ -33,8 +33,8 @@ if (strpos($slug, 'family') !== false || strpos($slug, 'bungalow') !== false) {
 	$room_image = $theme_uri . "/assets/images/stitch-design/common-detail.jpg";
 	$room_size = "35 m²";
 	$room_bed = "1 Giường đôi King size";
-	$room_view = "Toàn cảnh thung lũng Mai Châu";
-	$room_desc = "Phòng VIP Hướng Núi là không gian cao cấp nhất dành cho các cặp đôi thích sự hoàn hảo. Sở hữu hệ thống cửa kính chạm trần panorama mở rộng tối đa tầm mắt ra thung lũng và núi non Mai Châu lộng lẫy. Dịch vụ đi kèm bao gồm bữa sáng phục vụ tận giường và set trà chiều thượng hạng miễn phí mỗi ngày.";
+	$room_view = "Toàn cảnh thung lũng Hà Giang";
+	$room_desc = "Phòng VIP Hướng Núi là không gian cao cấp nhất dành cho các cặp đôi thích sự hoàn hảo. Sở hữu hệ thống cửa kính chạm trần panorama mở rộng tối đa tầm mắt ra thung lũng và núi non Hà Giang lộng lẫy. Dịch vụ đi kèm bao gồm bữa sáng phục vụ tận giường và set trà chiều thượng hạng miễn phí mỗi ngày.";
 	$amenities = [
 		['icon' => 'wifi', 'label' => 'Wi-Fi tốc độ cao miễn phí'],
 		['icon' => 'local_cafe', 'label' => 'Set trà chiều thượng hạng mỗi ngày'],
