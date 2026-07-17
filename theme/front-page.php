@@ -183,7 +183,7 @@ $theme_uri = esc_url( get_template_directory_uri() );
 
 <!-- Phòng Nghỉ (Rooms) Section -->
 <section class="py-24 px-margin-mobile md:px-margin-desktop bg-surface" id="rooms">
-	<div class="max-w-container-max mx-auto mb-16 flex flex-col md:flex-row justify-between items-end gap-6 transition-all duration-1000 opacity-100 translate-y-0">
+	<div class="max-w-container-max mx-auto mb-16 flex flex-col md:flex-row justify-between items-start md:items-end gap-6 transition-all duration-1000 opacity-100 translate-y-0">
 		<div>
 			<span class="font-label-caps text-label-caps text-tertiary-container mb-4 block">CHỌN CHỐN DỪNG CHÂN</span>
 			<h2 class="font-headline-lg text-headline-lg text-primary">Phòng nghỉ mộc mạc</h2>

@@ -14,3 +14,12 @@
 body {
   @apply bg-background text-foreground font-sans;
 }
+
+/* Mobile Menu Active States */
+.header__menu.active {
+  @apply translate-x-0;
+}
+
+.overlay.active {
+  @apply opacity-100 pointer-events-auto;
+}
